@@ -22,7 +22,7 @@ if "%userOption%"=="3" (
   copy /Y "%CD%\add-mod\*.jar" "%CD%\OptFine\"
 )
 
-if "%userOption%"=="3" (
+if "%userOption%"=="4" (
   copy /Y "%CD%\add-mod\*.jar" "%CD%\Element\"
   copy /Y "%CD%\add-mod\*.jar" "%CD%\OptFine\"
   copy /Y "%CD%\add-mod\*.jar" "%CD%\Server\"
