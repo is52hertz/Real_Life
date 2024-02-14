@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "kubejs:experience_bottle_one"
+    },
+    "title": {
+      "translate": "advancements.story.root.title"
+    },
+    "description": {
+      "translate": "advancements.story.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/stone_bricks.png"
+  },
+  "criteria": {
+    "iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "kubejs:experience_bottle_one"
+          }
+        ]
+      }
+    }
+  }
+}

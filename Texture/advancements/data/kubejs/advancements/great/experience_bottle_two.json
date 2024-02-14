@@ -1,0 +1,30 @@
+{
+  "parent": "kubejs:great/experience_bottle_two",
+  "display": {
+    "icon": {
+      "item": "kubejs:experience_bottle_two"
+    },
+    "title": {
+      "translate": "advancements.great.apple_gold.title"
+    },
+    "description": {
+      "translate": "advancements.great.apple_gold.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "kubejs:experience_bottle_two"
+          }
+        ]
+      }
+    }
+  }
+}

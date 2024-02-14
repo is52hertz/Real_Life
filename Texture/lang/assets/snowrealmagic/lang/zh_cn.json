@@ -1,0 +1,13 @@
+{
+  "itemGroup.snowrealmagic": "雪！真实的魔法！",
+  "entity.snowrealmagic.snow": "下落中的方块",
+  "block.snowrealmagic.slab": "雪台阶",
+  "block.snowrealmagic.stairs": "雪楼梯",
+  "block.snowrealmagic.wall": "雪墙",
+  "block.snowrealmagic.fence": "雪栅栏",
+  "block.snowrealmagic.fence_gate": "雪栅栏门",
+  "gamerule.blizzardStrength": "暴雪强度",
+  "gamerule.blizzardStrength.description": "雪块将从天而降。 1~8 设置最大层数。由 Snow! Real Magic! 添加",
+  "gamerule.blizzardFrequency": "暴雪频率",
+  "gamerule.blizzardFrequency.description": "暴风雪的可能性。每块/每格: N/10000。由 Snow! Real Magic! 添加"
+}

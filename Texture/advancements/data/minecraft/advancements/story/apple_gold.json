@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:story/enchant_item",
+  "display": {
+    "icon": {
+      "item": "kubejs:apple_gold"
+    },
+    "title": {
+      "translate": "advancements.story.apple_gold.title"
+    },
+    "description": {
+      "translate": "advancements.story.apple_gold.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "kubejs:apple_gold"
+          }
+        ]
+      }
+    }
+  }
+}
