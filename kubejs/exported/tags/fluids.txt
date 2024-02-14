@@ -1,0 +1,16 @@
+To refresh this file, delete it and run /reload command again! Last updated: Feb 8, 2024 3:12:49 PM
+
+#minecraft:lava
+- minecraft:lava
+- minecraft:flowing_lava
+
+#forge:experience
+- sophisticatedbackpacks:xp_still
+
+#minecraft:water
+- minecraft:water
+- minecraft:flowing_water
+
+#forge:milk
+- minecraft:milk?
+- minecraft:flowing_milk?
