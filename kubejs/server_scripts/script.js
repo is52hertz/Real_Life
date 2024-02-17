@@ -148,6 +148,20 @@ onEvent('recipes', event => {
 	event.shapeless('kubejs:experience_bottle_one', ['9x minecraft:experience_bottle'])
 	// 附魔之瓶 64x
 	event.shapeless('kubejs:experience_bottle_two', ['9x kubejs:experience_bottle_one'])
+	// 起源之球
+	event.shaped('origins:orb_of_origin', [
+		'IDG',
+		'DED',
+		'SDH'
+	], {
+		E: 'minecraft:ender_eye',
+		R: 'minecraft:rotten_flesh',
+		S: Item.of('minecraft:potion', '{Potion:"minecraft:strong_healing"}'),
+		H: Item.of('minecraft:potion', '{Potion:"minecraft:strong_harming"}'),
+		I: 'minecraft:iron_ingot',
+		D: 'minecraft:diamond',
+		G: 'minecraft:gold_ingot'
+	})
 })
 
 onEvent('item.tags', event => {
@@ -165,11 +179,10 @@ onEvent('player.chat', function (event) {
 		event.server.runCommandSilent(`say 踢出玩家${event.player.name}(原因：脏话{CNM})`)
 		event.cancel()//取消该事件，也就是说玩家的聊天信息不会显示
 	}
-	// 前缀 (伪造聊天)
-	let input = event.message.trim();//获取聊天信息
-	if (event.player.data.stats.hasAchievement('minecraft:end/kill_dragon')) {
-		event.server.tell([Text.black('[A]').bold(), `<${event.player.name}> ${input}`]);
-		event.cancel();
+	if (event.message.startsWith('kick')) {
+		event.server.runCommandSilent('kick ' + event.player.name + ' Ta想被踢出 ')
+		event.server.runCommandSilent(`say 踢出玩家${event.player.name}(原因：指令{kick})`)
+		event.cancel()//取消该事件，也就是说玩家的聊天信息不会显示
 	}
 })
 

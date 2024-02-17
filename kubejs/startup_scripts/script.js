@@ -6,7 +6,7 @@ onEvent('item.registry', event => {
 	// Register new items here
 	// event.create('example_item').displayName('Example Item')
 	event.create('apple_gold').displayName('苹果与金锭').maxStackSize(16).tooltip('§8在工作台分解它!')
-	event.create('experience_bottle_one').displayName('附魔之瓶 8x').maxStackSize(8).tooltip('§7蕴含着 8 瓶附魔之瓶的力量...')
+	event.create('experience_bottle_one').displayName('附魔之瓶 8x').maxStackSize(9).tooltip('§7蕴含着 8 瓶附魔之瓶的力量...')
 	event.create('experience_bottle_two').displayName('附魔之瓶 64x').maxStackSize(1).tooltip('§7蕴含着 64 瓶附魔之瓶的力量...')
 	event.create('effect_golden_apple').displayName('药水金苹果').maxStackSize(64).tooltip('§7药水效果的集合...包含正面和负面。').food(food => {
 		food

@@ -5,9 +5,10 @@ echo "1. 放入目录 - OptFine"
 echo "2. 放入目录 - Element"
 echo "3. 放入目录 - OptFine & Element"
 echo "4. 放入目录 - OptFine & Element & Server"
+echo "3->client , 4->server"
 echo.
 
-set /p userOption=请输入选项（1, 2 或 3）：
+set /p userOption=请输入选项（1, 2, 3 或 4）：
 
 if "%userOption%"=="1" (
   copy /Y "%CD%\add-mod\*.jar" "%CD%\OptFine\"
