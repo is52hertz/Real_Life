@@ -143,13 +143,29 @@ onEvent('recipes', event => {
 		P: 'minecraft:popped_chorus_fruit'
 	})
 	// 附魔之瓶
-	event.shapeless('minecraft:experience_bottle', ['3x minecraft:lapis_lazuli', 'minecraft:glass_bottle'])
+	event.shapeless('minecraft:experience_bottle', ['minecraft:lapis_lazuli', 'minecraft:glass_bottle'])
 	// 附魔之瓶 8x
-	event.shapeless('kubejs:experience_bottle_one', ['9x minecraft:experience_bottle'])
+	event.shaped('kubejs:experience_bottle_one', [
+		'EEE',
+		'ELE',
+		'EEE'
+	], {
+		E: 'minecraft:experience_bottle',
+		L: 'minecraft:lapis_lazuli'
+	})
+	event.shapeless('9x minecraft:experience_bottle', ['kubejs:experience_bottle_one'])
 	// 附魔之瓶 64x
-	event.shapeless('kubejs:experience_bottle_two', ['9x kubejs:experience_bottle_one'])
+	event.shaped('kubejs:experience_bottle_two', [
+		'EEE',
+		'ELE',
+		'EEE'
+	], {
+		E: 'kubejs:experience_bottle_one',
+		L: 'minecraft:lapis_lazuli'
+	})
+	event.shapeless('9x kubejs:experience_bottle_one', ['kubejs:experience_bottle_two'])
 	// 起源之球
-	event.shaped('origins:orb_of_origin', [
+	event.shaped('kubejs:broken_orb_of_origin', [
 		'IDG',
 		'DED',
 		'SDH'
@@ -162,6 +178,8 @@ onEvent('recipes', event => {
 		D: 'minecraft:diamond',
 		G: 'minecraft:gold_ingot'
 	})
+	//2
+	event.smithing('origins:orb_of_origin', 'kubejs:broken_orb_of_origin', 'kubejs:experience_bottle_two')
 })
 
 onEvent('item.tags', event => {
